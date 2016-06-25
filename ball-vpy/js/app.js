@@ -10,12 +10,12 @@ window.__context = {
 const execute = function (code) {
   const js_code = glowscript_compile(code, options);
   const program = eval(js_code);
-  
+
   console.log(js_code);
   program(function(err){
     console.log(err)
   });
-}
+};
 
 const fetch_code = function(url){
   fetch(url)
@@ -23,6 +23,6 @@ const fetch_code = function(url){
       return res.text();
     })
     .then(execute);
-}
+};
 
 fetch_code('./py/ball.py')
