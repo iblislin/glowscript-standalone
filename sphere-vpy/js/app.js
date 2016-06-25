@@ -1,5 +1,5 @@
-var code = 'sphere()'
-var options = {
+const code = 'sphere()'
+const options = {
   lang: 'vpython',
   version: 2.1
 }
